@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      white-cloud-hd-transparent-png-png_52355_0: 8607052625383024736
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 08fcbc7488935e244ac3d3904d54c4f6
+guid: 0059902c739bc54449fc74a5435a37b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1976370539498324932
-    second: 25466023-desenho-animado-pedra-calcada-desatado-padrao-tijolo-parede-textura-rachado-rocha-pavimentadora-blocos-fundo-antigo-velho-mosaico-passarela-ilustracao-pedra-calcada-projeto-vetor_0
+      213: -393695472065225080
+    second: Captura_de_tela_2026-02-05_162937-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 25466023-desenho-animado-pedra-calcada-desatado-padrao-tijolo-parede-textura-rachado-rocha-pavimentadora-blocos-fundo-antigo-velho-mosaico-passarela-ilustracao-pedra-calcada-projeto-vetor_0
+      name: Captura_de_tela_2026-02-05_162937-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 980
-        height: 980
+        x: 35
+        y: 3
+        width: 178
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3cb7a037758294e0800000000000000
-      internalID: -1976370539498324932
+      spriteID: 88e5fd5dd00598af0800000000000000
+      internalID: -393695472065225080
       vertices: []
       indices: 
       edges: []
@@ -160,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      25466023-desenho-animado-pedra-calcada-desatado-padrao-tijolo-parede-textura-rachado-rocha-pavimentadora-blocos-fundo-antigo-velho-mosaico-passarela-ilustracao-pedra-calcada-projeto-vetor_0: -1976370539498324932
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
