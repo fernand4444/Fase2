@@ -16,12 +16,20 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
+    private AudioSource _audioSource;
+
+    [Header("Áudios")]
+    public AudioClip somAndar;
+    public AudioClip somPulo;
+    public AudioClip somAtaque;
+    public AudioClip somItem; // exemplo: pegar item
 
     void Start()
     {
-        _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
-        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        _animator = gameObject.GetComponent<Animator>();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void OnCollisionStay2D(Collision2D collision)
@@ -48,7 +56,7 @@ public class Player : MonoBehaviour
         atacando = false;
         parado = true;
 
-        // Movimento para a esquerda
+        // Movimento esquerda
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             transform.position += new Vector3(-velocidade * Time.deltaTime, 0, 0);
@@ -58,10 +66,11 @@ public class Player : MonoBehaviour
             {
                 andando = true;
                 parado = false;
+                PlayLoopSound(somAndar);
             }
         }
 
-        // Movimento para a direita
+        // Movimento direita
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             transform.position += new Vector3(velocidade * Time.deltaTime, 0, 0);
@@ -71,7 +80,14 @@ public class Player : MonoBehaviour
             {
                 andando = true;
                 parado = false;
+                PlayLoopSound(somAndar);
             }
+        }
+
+        // Para som de andar quando parado
+        if (!andando && _audioSource.clip == somAndar)
+        {
+            _audioSource.Stop();
         }
 
         // Pulo
@@ -80,13 +96,15 @@ public class Player : MonoBehaviour
             _rigidbody2D.AddForce(Vector2.up * focaPulo, ForceMode2D.Impulse);
             pulando = true;
             parado = false;
+            PlayOneShot(somPulo);
         }
 
-        // Ataque (exemplo: tecla J)
-        if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.J))
+        // Ataque (tecla J)
+        if (Input.GetKeyDown(KeyCode.J))
         {
             atacando = true;
             parado = false;
+            PlayOneShot(somAtaque);
         }
 
         // Atualiza animações
@@ -94,5 +112,31 @@ public class Player : MonoBehaviour
         _animator.SetBool("Pulando", pulando);
         _animator.SetBool("Atacando", atacando);
         _animator.SetBool("Parado", parado);
+    }
+
+    // 🔊 Toca sons únicos (pulo, ataque, item)
+    void PlayOneShot(AudioClip clip)
+    {
+        if (clip != null)
+        {
+            _audioSource.PlayOneShot(clip);
+        }
+    }
+
+    // 🔁 Toca sons contínuos (andar)
+    void PlayLoopSound(AudioClip clip)
+    {
+        if (_audioSource.clip != clip)
+        {
+            _audioSource.clip = clip;
+            _audioSource.loop = true;
+            _audioSource.Play();
+        }
+    }
+
+    // 🎒 Exemplo: pegar item
+    public void PlayItemSound()
+    {
+        PlayOneShot(somItem);
     }
 }
