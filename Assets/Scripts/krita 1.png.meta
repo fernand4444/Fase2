@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: f9592614872ebe64bba62450aaa42886
+guid: 6317916723c08a54eb70faa593cd1eb0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8947971778638661945
-    second: 153567-fundo-da-caverna-azul-livre-vetor_0
+      213: -3050400921835956627
+    second: krita 1_0
+  - first:
+      213: 8739478010035947715
+    second: krita 1_1
+  - first:
+      213: -4704654071316854476
+    second: krita 1_2
+  - first:
+      213: -2119183933829804506
+    second: krita 1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,15 +106,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-<<<<<<<< HEAD:Assets/Images/Captura de tela 2026-02-05 164224.png.meta
-<<<<<<<< HEAD:Assets/Images/Captura de tela 2026-02-05 164224.png.meta
-    buildTarget: Android
-========
     buildTarget: WebGL
->>>>>>>> 61fdc27352fd6b116ddabdbaa5ecea36c67df8c7:Assets/Scenes/153567-fundo-da-caverna-azul-livre-vetor.jpg.meta
-========
-    buildTarget: WebGL
->>>>>>>> 4fa08d81fd6b934f3b8aa2c9f7ea1a83fcd8c079:Assets/Scenes/153567-fundo-da-caverna-azul-livre-vetor.jpg.meta
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -134,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 153567-fundo-da-caverna-azul-livre-vetor_0
+      name: krita 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 700
-        height: 490
+        x: 608
+        y: 991
+        width: 44
+        height: 1434
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9394afd9ce49d2c70800000000000000
-      internalID: 8947971778638661945
+      spriteID: d669177f58ccaa5d0800000000000000
+      internalID: -3050400921835956627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: krita 1_1
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1261
+        width: 56
+        height: 1332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8c78642fcd84970800000000000000
+      internalID: 8739478010035947715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: krita 1_2
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 499
+        width: 26
+        height: 1500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43940186c06b5beb0800000000000000
+      internalID: -4704654071316854476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: krita 1_3
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1375
+        width: 26
+        height: 1416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e0c5aa0752792e0800000000000000
+      internalID: -2119183933829804506
       vertices: []
       indices: 
       edges: []
@@ -168,8 +235,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Captura de tela 2026-02-05 164224_0: 8697454709469575779
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
