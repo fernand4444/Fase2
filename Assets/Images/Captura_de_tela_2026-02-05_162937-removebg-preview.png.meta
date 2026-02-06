@@ -97,7 +97,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+<<<<<<< HEAD:Assets/Images/Captura_de_tela_2026-02-05_162937-removebg-preview.png.meta
     buildTarget: Android
+=======
+    buildTarget: WebGL
+>>>>>>> 61fdc27352fd6b116ddabdbaa5ecea36c67df8c7:Assets/Scripts/Captura_de_tela_2026-02-05_162937-removebg-preview.png.meta
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
