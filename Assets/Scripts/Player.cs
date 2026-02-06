@@ -99,8 +99,8 @@ public class Player : MonoBehaviour
             PlayOneShot(somPulo);
         }
 
-        // Ataque (tecla J)
-        if (Input.GetKeyDown(KeyCode.J))
+        // Ataque (tecla Z)
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             atacando = true;
             parado = false;
